@@ -1,0 +1,107 @@
+:root {
+  --primary: #96839c;
+  --medium: #715b77;
+  --dark: #4d3e52;
+  --grey: #bdbdbd;
+  --white: #f0f0f0;
+  --black: #000000;
+  --shadow: 0 1px 5px rgb(73 73 73 / 0.8);
+};
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: var(--black);
+}
+
+body {
+  background: var(--primary);
+  margin: 30px 50px;
+}
+
+.wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  background: var(--white);
+  box-shadow: var(--shadow);
+  border-radius: 12px;
+
+  display: grid;
+  gap: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--dark);
+}
+
+section {
+  padding: 20px;
+  background-color: var(--medium);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+}
+
+section h2 {
+  margin-bottom: 15px;
+}
+
+section label {
+  color: var(--white);
+  font-weight: bold;
+  margin-bottom: 10px;
+  display: block;
+}
+
+input, select, textarea {
+  padding: 6px 8px;
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  background: var(--grey);
+  color: var(--dark);
+  margin-bottom: 12px;
+}
+
+button {
+  background: var(--dark);
+  color: var(--white);
+  padding: 10px 20px;
+  border: none;
+  font-weight: bold;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+button:hover {
+  background: var(--black);
+}
+
+
+#snakeOutput,
+#urlOutput,
+#dateStringOutput,
+#dateObjectOutput,
+#coordOutput,
+#multCoordOutput,
+#mimeOutput,
+#licenseOutput,
+#booleanOutput,
+#buildUrlOutput {
+  background: var(--grey);
+  border-radius: 8px;
+  padding: 12px;
+  color: var(--dark);
+  margin: 12px;
+}
+
+

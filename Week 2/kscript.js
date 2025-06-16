@@ -185,3 +185,5 @@ function addPeriod(s){
 }
 console.log(addPeriod("Hello"));
 console.log(addPeriod(str));
+
+

@@ -1,0 +1,159 @@
+<!--Kassaundra Fequet-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>QAP2 JavaScript</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>Programming With JavaScript - QAP2</h1>
+
+      <section id="snakeBox">
+        <form id="snakeForm">
+          <h2>Convert String to Lower Snake Case</h2>
+          <label for="snakeLabel">String: </label>
+          <input type="text" id="snakeInput" placeholder="Enter a string" />
+          <button id="snakeButton">SUBMIT</button>
+        </form>
+        <div id="snakeOutput"></div>
+      </section>
+
+      <section id="urlBox">
+        <h2>Create a Video Element</h2>
+        <form id="urlForm">
+          <label for="srcLabel">SRC: </label>
+          <input type="text" id="srcInput" placeholder="Enter a SRC" />
+
+          <label for="widthLabel">Width: </label>
+          <input type="text" id="widthInput" placeholder="Enter a width" />
+
+          <label id="controlsLabel">*Optional* Add playback controls </label>
+          <input type="checkbox" id="controlsInput" />
+
+          <button type="submit" id="urlButton">SUBMIT</button>
+        </form>
+        <div id="urlOutput"></div>
+      </section>
+
+      <section id="dateStringBox">
+        <h2>Parse a Date String</h2>
+        <form id="dateStringForm">
+          <label for="dateStringLabel">Date: </label>
+          <input type="text" id="dateStringInput" placeholder="YYYY-MM-DD" />
+          <button type="submit" id="dateStringButton">SUBMIT</button>
+        </form>
+        <div id="dateStringOutput"></div>
+      </section>
+
+      <section id="dateObjectBox">
+        <h2>Convert a Date Object to a String</h2>
+        <form id="dateObjectForm">
+          <label for="dateObjectLabel">Date: </label>
+          <input type="date" id="dateObjectInput" />
+          <button type="submit" id="dateObjectButton">SUBMIT</button>
+        </form>
+        <div id="dateObjectOutput"></div>
+      </section>
+
+      <section id="coordBox">
+        <h2>Parse Geographic Coordinates</h2>
+        <form id="coordForm">
+          <label for="coordLabel">Coordinate:</label>
+          <input type="text" id="coordInput" placeholder="Enter a coordinate" />
+          <button type="submit" id="coordButton">SUBMIT</button>
+        </form>
+        <div id="coordOutput"></div>
+      </section>
+
+      <section id="multCoordBox">
+        <h2>Format and Display Multiple Coordinates</h2>
+        <form id="multCoordForm">
+          <label for="multCoordLabel">Coordinates:</label>
+          <textarea
+            id="multCoordInput"
+            cols="25"
+            rows="3"
+            placeholder="Enter 1 coordinate per line
+55.7558, 37.6173
+19.4326, -99.1332"
+          ></textarea>
+          <button type="submit" id="multCoordButton">SUBMIT</button>
+        </form>
+        <div id="multCoordOutput"></div>
+      </section>
+
+      <section id="mimeBox">
+        <h2>Determine the MIME Type from Filename</h2>
+        <form id="mimeForm">
+          <label for="mimeLabel">File Name or Path:</label>
+          <input type="text" id="mimeInput" placeholder="Enter a file name" />
+          <button type="submit" id="mimeButton">SUMBIT</button>
+        </form>
+
+        <div id="mimeOutput"></div>
+      </section>
+
+      <section id="licenseBox">
+        <h2>Generate a License Link</h2>
+        <form id="licenseForm">
+          <label for="licenseTextLabel">License Code: </label>
+          <input
+            type="text"
+            id="licenseTextInput"
+            placeholder="Enter a license code"
+          />
+
+          <label for="licenseCheckLabel">*Optional* Open link in new tab</label>
+          <input type="checkbox" id="licenseCheckInput" />
+
+          <button type="submit" id="licenseButton">SUBMIT</button>
+        </form>
+
+        <div id="licenseOutput"></div>
+      </section>
+
+      <section id="booleanBox">
+        <h2>Convert Values to Boolean</h2>
+        <form id="booleanForm">
+          <label for="booleanLabel"
+            >Values (comma-separated if multiple):
+          </label>
+          <input
+            type="text"
+            id="booleanInput"
+            placeholder='Enter a value or multiple (e.g.: "Y, no, true")'
+          />
+
+          <button type="submit" id="booleanButton">SUBMIT</button>
+        </form>
+
+        <div id="booleanOutput"></div>
+      </section>
+
+      <section id="buildURLBox">
+        <h2>Build a URL</h2>
+        <form id="buildURLForm">
+          <label id="urlQueryId">Query</label>
+          <input id="urlQueryInput" placeholder="Enter query" />
+
+          <label for="urlOrderLabel">Order: </label>
+          <select id="urlOrderInput"></select>
+
+          <label id="urlCountLabel">Count: </label>
+          <input id="count" type="number" min="1" max="50" />
+
+          <label id="urlLicenseLabel">License: </label>
+          <select id="urlLicenseInput"></select>
+
+          <button id="buildUrlButton">SUBMIT</button>
+        </form>
+        <div id="buildUrlOutput"></div>
+      </section>
+
+      <script src="qap2.js"></script>
+    </div>
+  </body>
+</html>
