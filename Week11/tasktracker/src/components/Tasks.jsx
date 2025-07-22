@@ -1,31 +1,18 @@
-const tasks = [
-  {
-    id: 1,
-    text: "Doctor's appointment",
-    day: "July 10,2025 at 2:30pm",
-    reminder: true,
-  },
-  {
-    id: 2,
-    text: "Parent teacher's meeting",
-    day: "July 17,2025 at 1:30pm",
-    reminder: false,
-  },
-  {
-    id: 3,
-    text: "GYM",
-    day: "August 6,2025 at 2:30pm",
-    reminder: false,
-  },
-];
-
-const Tasks = () => {
+import Task from "./Task";
+const Tasks = ({ tasks, onDelete, onToggle }) => {
   return (
     <>
       {tasks.map((task) => (
-        <h3 key={task.id}>{task.text}</h3>
+        <Task
+          key={task.id}
+          task={task}
+          onDelete={onDelete}
+          onToggle={onToggle}
+        />
       ))}
     </>
   );
 };
 export default Tasks;
+
+// Unless we use Redux!, we usually take our all state variables and define them in App.js (to make them global, so that they can be passed to any component needed)
