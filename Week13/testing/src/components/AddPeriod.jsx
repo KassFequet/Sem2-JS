@@ -2,7 +2,7 @@ import React from 'react'
 
 const AddPeriod = ({name}) => {
   return (
-      <div><h3>AddPeriod</h3><p>Hello {name ? `${name}.` : ""}</p></div>
+      <div><h3>Add Period</h3><p>Hello {name ? `${name}.` : ""}</p></div>
   )
 }
 
