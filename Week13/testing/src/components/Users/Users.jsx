@@ -5,7 +5,7 @@ const Users = ({ users }) => {
     useEffect(() => {
         setTimeout(() => {
             setIsLoggedIn(true);
-        }, 500);
+        }, 3000);
     });
 
 return (

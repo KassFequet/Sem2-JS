@@ -21,7 +21,7 @@ describe("Users", () => {
 
         const startLearningButton2 = await screen.findByRole("button", {
         name: "Start Learning",
-        });
+        }, {timeout: 4000});
         expect(startLearningButton2).toBeInTheDocument();
     })
 })
